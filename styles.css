@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    background-color: rgb(241, 228, 228);
+}
+header{
+    margin-top: 15px;   
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: rgb(35, 111, 177);
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links ul li::after{
+    content: '';
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    height: 2px;
+    width: 0%;
+}
+.nav-links ul li :hover ::after{
+    width: 100%;
+
+}
+main{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-radius: 5px;
+}
+.sedan{
+    background-color: rgb(230, 72, 15);
+}
+img{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+h3{
+    color: azure;
+    padding: 10px;
+}
+p{
+    color: azure;
+    padding: 10px;
+}
+.suv{
+    background-color: rgba(0, 139, 139, 0.911);
+}
+.luxury{
+    background-color: rgba(0, 100, 0, 0.979);
+}
+button{
+    margin: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: azure;
+}
+    
+
+
+
+
+

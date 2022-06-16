@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body{
+    background-color: rgb(241, 228, 228);
+}
+header{
+    margin-top: 15px;   
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: rgb(35, 111, 177);
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links ul li::after{
+    content: '';
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    height: 2px;
+    width: 0%;
+}
+.nav-links ul li :hover ::after{
+    width: 100%;
+
+}
+.container{
+    display: grid;
+    width: 600px;
+    height: 400px;
+    margin-top: 6%;
+    margin-left: 400px;
+    gap: 8px;
+    border-radius: 5px;
+    grid-template-areas: 
+    'a a a a b b'
+    'c c c d d d'
+    'c c c e e e'
+    ;
+
+}
+.container div{
+    gap: 10px;
+}
+.a-box{
+    background-color: red;
+    grid-area: a;
+}
+.b-box{
+    background-color: orange;
+    grid-area: b;
+}
+.c-box{
+    background-color: green;
+    grid-area: c;
+}
+.d-box{
+    background-color: lightblue;
+    grid-area: d;
+}
+.e-box{
+    background-color: aquamarine;
+    grid-area: e;
+}
